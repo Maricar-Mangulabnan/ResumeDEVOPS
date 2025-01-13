@@ -6,7 +6,7 @@
 }
 
 body{
-    background: #00b6c4;
+    background: #003366;
 }
 
 .container{
@@ -39,7 +39,7 @@ body{
     border-radius: 50%;
     overflow:hidden;
     margin: 25px auto;
-    border: 15px groove deepskyblue;    
+    border: 15px groove rgb(242, 245, 246);    
 }
 .img area img{
     width: 100%;

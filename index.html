@@ -1,53 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<style>
-    ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        background-color: #333;
-    }
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
 
-    li {
-        float: left;
-    }
+        li {
+            float: left;
+        }
 
-    li a {
-        display: block;
-        color: white;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-    }
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
 
-    li a:hover {
-        background-color: #111;
-    }
+        /* Removed light blue hover effect */
+        li a:hover {
+            background-color: #eeebeb; /* Changed hover background color to dark */
+        }
 
-</style>
+        /* Updated Styles for Dark Blue Background */
+        .hero {
+            background-color: #003366; /* Dark blue background */
+            color: white; /* Text color set to white for contrast */
+            text-align: center;
+            padding: 50px 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Vertically center */
+            align-items: center; /* Horizontally center */
+            height: 100vh; /* Full height of the viewport */
+            margin: 0;
+        }
+
+        /* Set light blue color for h1 and p text */
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            font-family: 'Arial', sans-serif;
+            font-weight: bold;
+            color: #98FF98; /* Light blue color */
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #98FF98 /* Light blue color */
+        }
+
+        .hero::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.4); /* Dark overlay to improve text visibility */
+            border-radius: 10px;
+        }
+    </style>
 </head>
 <body>
     <link rel="stylesheet" href="style.css">
     
     <!-- Navbar -->
-    <nav>
-        <ul class="navbar">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="member1.html">Maricar</a></li>
-            <li><a href="member2.html">Jhoncarlo</a></li>
-            <li><a href="member3.html">Aero Kenn</a></li>
-            <li><a href="member4.html">Janzen</a></li>
-            <li><a href="member5.html">Riane</a></li>
+    <nav style="background-color: #003366; padding: 15px 20px; box-shadow: 0 4px 12px rgb(148, 100, 251);">
+        <ul class="navbar" style="list-style-type: none; margin: 0; padding: 0; display: flex; justify-content: space-around; align-items: center;">
+            <li><a href="index.html" style="color: #98FF98; text-decoration: none; padding: 10px 15px; font-size: 1.1rem; font-weight: bold; transition: color 0.3s, box-shadow 0.3s;">Home</a></li>
+            <li><a href="member1.html" style="color: #98FF98; text-decoration: none; padding: 10px 15px; font-size: 1.1rem; font-weight: bold; transition: color 0.3s, box-shadow 0.3s;">Maricar</a></li>
+            <li><a href="member2.html" style="color: #98FF98; text-decoration: none; padding: 10px 15px; font-size: 1.1rem; font-weight: bold; transition: color 0.3s, box-shadow 0.3s;">Jhon Carlo</a></li>
+            <li><a href="member3.html" style="color: #98FF98; text-decoration: none; padding: 10px 15px; font-size: 1.1rem; font-weight: bold; transition: color 0.3s, box-shadow 0.3s;">Aero Kenn</a></li>
+            <li><a href="member4.html" style="color: #98FF98; text-decoration: none; padding: 10px 15px; font-size: 1.1rem; font-weight: bold; transition: color 0.3s, box-shadow 0.3s;">Janzen</a></li>
+            <li><a href="member5.html" style="color: #98FF98; text-decoration: none; padding: 10px 15px; font-size: 1.1rem; font-weight: bold; transition: color 0.3s, box-shadow 0.3s;">Riane</a></li>
         </ul>
     </nav>
+    
+    <style>
+        nav a:hover {
+            color: #98FF98; /* Mint Green color on hover */
+            box-shadow: 0 4px 12px rgba(152, 255, 152, 0.5); /* Soft green shadow with delay effect */
+        }
+    </style>
+    
 
     <!-- Main Content -->
     <header class="hero">
         <h1>Welcome to Our Resume Template Project</h1>
         <p>A collaborative project to showcase our team members' profiles and skills.</p>
     </header>
-
 </body>
 </html>
