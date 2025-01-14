@@ -5,51 +5,125 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WEB RESUME</title>
     <link rel="stylesheet" href="style.css">
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        .social-icons {
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
+            gap: 20px; 
+            margin-top: 50px;
+        }
+
+        .social-icon {
+            font-size: 50px;
+            color: #333;
+            transition: color 0.3s ease;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .social-icon:hover {
+            color: #0077b5; 
+        }
+
+      
+        .facebook:hover {
+            color: #3b5998; 
+        }
+
+        .instagram:hover {
+            color: #e4405f; 
+        }
+
+        .x:hover {
+            color: #1d9bf0; 
+        }
+
+        .github:hover {
+            color: #211F1F; 
+        }
+
+      
+        .social-icon span {
+            display: block;
+            margin-top: 8px;
+            font-size: 14px;
+            color: #333;
+        }
+
+        .social-icon span:hover {
+            color: inherit; 
+        }
+    </style>
 </head>
 <body>
     <div class="container">
         <div class="header">
-          <div class="img-area">
-            <!-- Image Inserted Here -->
-            <img src="https://y9nvuerfde.ufs.sh/f/CMDOGg6SIcak7ZAhhcPGnywWZ9rSKlmk5T4IL0C8UYpF7hOu" alt="Jhon Carlo R. Mariano">
-          </div>  
-          <h1>Jhon Carlo R. Mariaano</h1>
-          <h3>3rd Year College</h3>
+            <div class="img-area">
+              
+                <img src="https://y9nvuerfde.ufs.sh/f/CMDOGg6SIcak7ZAhhcPGnywWZ9rSKlmk5T4IL0C8UYpF7hOu" alt="Jhon Carlo R. Mariano">
+            </div>
+            <h1>Jhon Carlo R. Mariano</h1>
+            <h3>3rd Year College</h3>
         </div>
 
         <div class="main">
-         <div class="left">
-                    <h2>Personal Information</h2>
-                    <p><strong>Name:</strong>Jhon Carlo Reyes Mariano</p>
-                    <p><strong>Age:</strong>21</p>
-                    <p><strong>Email:</strong>johncarlomariano1626@gmail.com</p>
-                    <p><strong>Contact #:</strong>0915-830-3294</p>
+            <div class="left">
+                <h2>Personal Information</h2>
+                <p><strong>Name:</strong> Jhon Carlo Reyes Mariano</p>
+                <p><strong>Age:</strong> 21</p>
+                <p><strong>Email:</strong> johncarlomariano1626@gmail.com</p>
+                <p><strong>Contact #:</strong> 0915-830-3294</p>
 
-                        <h2>Hobby</h2>
-                        <ul>
-                            <li>Basketball</li>
-                            <li>Playing Online games</li>
-                        </ul>
+                <h2>Hobby</h2>
+                <ul>
+                    <li>Basketball</li>
+                    <li>Playing Online games</li>
+                </ul>
 
-            <h2>Education</h2>
-            <br>Holy Cross College BS Computer Science 2022 - present </li>
-            <h5>Aclc College Of Baliuag 2020 - 2022 </h5>
-            <h5> Bahay Pare National High School 2016 - 2019 </h5>
-            <h5> Bahay pare Elementary School 2010 - 2016 </h5>
-         </div>
-         <div class="right">
-            <h2>About us </h2>
-            <ul>
-                <li> Hello! My name is Jhon Carlo Reyes Mariano. I am 21 years old and I live in Bahay Pare, Candaba, Pampanga. I am studying Bachelor of Science in Computer Science (BScs) at Holy Cross College.
+                <h2>Education</h2>
+                <p>Holy Cross College BS Computer Science 2022 - present</p>
+                <h5>Aclc College Of Baliuag 2020 - 2022</h5>
+                <h5>Bahay Pare National High School 2016 - 2019</h5>
+                <h5>Bahay Pare Elementary School 2010 - 2016</h5>
+            </div>
 
-                    I am passionate about learning new things in technology and hope to use my knowledge to create helpful projects in the future. I love coding and solving problems with computers.
-                    
-                    In my free time, I like to keep up with the latest technology and work with my friends on school projects.</li>
-            </ul> <br>
-            <ul>
+            <div class="right">
+                <h2>About Me</h2>
+                <ul>
+                    <li>
+                        Hello! My name is Jhon Carlo Reyes Mariano. I am 21 years old and I live in Bahay Pare, Candaba, Pampanga. I am studying Bachelor of Science in Computer Science (BScs) at Holy Cross College.
+                        I am passionate about learning new things in technology and hope to use my knowledge to create helpful projects in the future. I love coding and solving problems with computers.
+                        In my free time, I like to keep up with the latest technology and work with my friends on school projects.
+                    </li>
+                </ul>
                 
-            </ul>
-         </div>   
+                <h2>Social Media</h2>
+                <div class="social-icons">
+                   
+                    <div class="social-icon facebook">
+                        <i class="fab fa-facebook"></i>
+                        <span>facebook: Jhoncarlo Reyes Mariano</span>
+                    </div>
+              
+                    <div class="social-icon instagram">
+                        <i class="fab fa-instagram"></i>
+                        <span>instagram: VibewithSt.jhon</span>
+                    </div>
+                
+                    <div class="social-icon x">
+                        <i class="fab fa-x"></i>
+                        <span>X: St.Jhonyy</span>
+                    </div>
+                 
+                    <div class="social-icon github">
+                        <i class="fab fa-github"></i>
+                        <span>github: mariano-jhon-carlo</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </body>
