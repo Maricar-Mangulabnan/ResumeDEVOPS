@@ -4,33 +4,35 @@
 <head>
     <style>
         /* General Navbar Styles */
-        ul {
+        nav {
+            background-color: #003366;
+            padding: 15px 20px;
+            box-shadow: 0 4px 12px rgba(148, 100, 251, 0.6);
+        }
+
+        nav ul {
             list-style-type: none;
             margin: 0;
             padding: 0;
-            overflow: hidden;
-            background-color: #003366; /* Dark blue background */
-            box-shadow: 0 4px 12px rgb(148, 100, 251); /* Subtle shadow effect */
+            display: flex;
+            justify-content: space-around;
         }
 
-        li {
-            float: left;
+        nav ul li {
+            display: inline;
         }
 
-        li a {
-            display: block;
-            color: #98FF98; /* Light green text */
-            text-align: center;
-            padding: 14px 16px;
+        nav ul li a {
+            color: white;
             text-decoration: none;
+            padding: 10px 15px;
             font-size: 1.1rem;
             font-weight: bold;
-            transition: color 0.3s, box-shadow 0.3s ease;
+            transition: color 0.3s, box-shadow 0.3s;
         }
 
-        li a:hover {
-            color: #4b4bca; /* Hover text color change */
-            box-shadow: 0 4px 12px rgba(75, 75, 202, 0.5); /* Hover glow effect */
+        nav ul li a:hover {
+            color: #fff;
         }
 
         /* Hero Section */
@@ -38,8 +40,7 @@
             background-color: #003366; /* Dark blue background */
             color: white; /* Default text color */
             text-align: center;
-            padding: 50px 20px;
-            border-radius: 10px;
+           
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
             position: relative;
             display: flex;
@@ -55,14 +56,14 @@
             margin-bottom: 10px;
             font-family: 'Arial', sans-serif;
             font-weight: bold;
-            color: #98FF98; /* Light green for the headline */
+            color: #ffffff; /* Light green for the headline */
         }
 
         .hero p {
             font-size: 1.2rem;
             font-family: 'Arial', sans-serif;
             line-height: 1.6;
-            color: #98FF98; /* Light green for subtext */
+            color: #ffffff; /* Light green for subtext */
         }
 
         /* Hover Effects */
@@ -74,7 +75,7 @@
             right: 0;
             bottom: 0;
             background-color: rgba(0, 0, 0, 0.4); /* Dim overlay effect */
-            border-radius: 10px;
+            border-radius: 10px ;
         }
     </style>
 </head>
@@ -83,7 +84,7 @@
 
     <!-- Navbar -->
     <nav>
-        <ul class="navbar">
+        <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="member1.html">Maricar</a></li>
             <li><a href="member2.html">Jhon Carlo</a></li>
@@ -98,6 +99,7 @@
         <h1>Welcome to Our Resume Template Project</h1>
         <p>A collaborative project to showcase our team members' profiles and skills.</p>
     </header>
+
 
 </body>
 
