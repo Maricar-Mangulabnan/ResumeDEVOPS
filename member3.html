@@ -9,11 +9,11 @@
             overflow: hidden;
             background-color: #333;
         }
-    
+
         li {
             float: left;
         }
-    
+
         li a {
             display: block;
             color: white;
@@ -21,66 +21,122 @@
             padding: 14px 16px;
             text-decoration: none;
         }
-    
-        li a:hover {
-            background-color: #111;
-        }
-    
-    </style>
-</head>
 
+      
+        li a:hover {
+            background-color: #4b4bca; 
+        }
+
+      
+        .hero {
+            background-color: #003366; 
+            color: white; 
+            text-align: center;
+            padding: 50px 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center; 
+            height: 100vh; 
+            margin: 0;
+        }
+
+     
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            font-family: 'Arial', sans-serif;
+            font-weight: bold;
+            color: #98FF98; 
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #98FF98 
+        }
+
+        .hero::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.4); 
+            border-radius: 10px;
+        }
+    </style>
+
+</head>
 <body>
+
     <link rel="stylesheet" href="style.css">
     
     <!-- Navbar -->
-    <nav>
-        <ul class="navbar">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="member1.html">Maricar</a></li>
-            <li><a href="member2.html">Jhoncarlo</a></li>
-            <li><a href="member3.html">Aero Kenn</a></li>
-            <li><a href="member4.html">Janzen</a></li>
-            <li><a href="member5.html">Riane</a></li>
+    <nav style="background-color: #003366; padding: 15px 20px; box-shadow: 0 4px 12px rgb(148, 100, 251);">
+        <ul class="navbar" style="list-style-type: none; margin: 0; padding: 0; display: flex; justify-content: space-around; align-items: center;">
+            <li><a href="index.html" style="color: #98FF98; text-decoration: none; padding: 10px 15px; font-size: 1.1rem; font-weight: bold; transition: color 0.3s, box-shadow 0.3s;">Home</a></li>
+            <li><a href="member1.html" style="color: #98FF98; text-decoration: none; padding: 10px 15px; font-size: 1.1rem; font-weight: bold; transition: color 0.3s, box-shadow 0.3s;">Maricar</a></li>
+            <li><a href="member2.html" style="color: #98FF98; text-decoration: none; padding: 10px 15px; font-size: 1.1rem; font-weight: bold; transition: color 0.3s, box-shadow 0.3s;">Jhon Carlo</a></li>
+            <li><a href="member3.html" style="color: #98FF98; text-decoration: none; padding: 10px 15px; font-size: 1.1rem; font-weight: bold; transition: color 0.3s, box-shadow 0.3s;">Aero Kenn</a></li>
+            <li><a href="member4.html" style="color: #98FF98; text-decoration: none; padding: 10px 15px; font-size: 1.1rem; font-weight: bold; transition: color 0.3s, box-shadow 0.3s;">Janzen</a></li>
+            <li><a href="member5.html" style="color: #98FF98; text-decoration: none; padding: 10px 15px; font-size: 1.1rem; font-weight: bold; transition: color 0.3s, box-shadow 0.3s;">Riane</a></li>
         </ul>
     </nav>
 
-    <!-- Resume Content -->
-    <main class="resume-page">
-        <section class="intro">
-            <img src="assets/img/profile/member1.jpg" alt="Member 1 Photo" class="profile-pic">
-            <h1>Maricar Mangulabnan</h1>
-            <p>Specializes in  Web Development, UI/UX Design, Data Analyst]</p>
-        </section>
+    <div class="container">
+        <div class="header">
+          <div class="img-area">
+            <img src=""alt="">
+          </div>  
+          <h1>Aero Kenn G. Dela Peña</h1>
+          <h3>Software Engineer</h3>
+        </div>
 
-        <section class="resume-details">
-            <h2>About Me</h2>
-            <p>Ambitious and hard-working college student with a solid academic background
-                and a strong desire to learn and grow in a professional setting. Demonstrated
-                ability to handle multiple responsibilities through involvement in academic
-                projects and extracurricular activities. Seeking an entry-level position to apply
-                my skills, contribute to a team, and gain valuable industry experience.</p>
-
+        <div class="main">
+         <div class="left">
+            <h2>Personal Information</h2>
+            <p><strong>Name:</strong>Janzen Laurence Decano</p>
+            <p><strong>Age:</strong>21</p>
+            <p><strong>Email:</strong>janzen.decano@gmail.com</p>
+            <p><strong>Contact #:</strong>09368977470</p>
             <h2>Skills</h2>
             <ul>
-                <li>Skill 1: HTML/CSS/JS</li>
-                <li>Skill 2: React or Angular</li>
-                <li>Skill : Team collaboration</li>
+                <li>HTML/CSS</li>
+                <li>C++</li>
+                <li>Python</li>
+                <li>MySql</li>
             </ul>
-
-            <h2>Experience</h2>
-            <ul>
-                <li><strong>Job Title</strong> - Company Name (YYYY-YYYY)</li>
-                <li><strong>Job Title</strong> - Company Name (YYYY-YYYY)</li>
-            </ul>
-
             <h2>Education</h2>
+            <h3>Bachelor Science in Computer Science</h3>
+            <p>Holy Cross College 2016-2017</p>
+         </div>
+         <div class="right">
+            <h2>Work Experiences</h2>
+            <h3>Apple Company - Philippines</h3>
+            <p><strong>Position:</strong> Backend Developer</p>
+            <p><strong>Duration:</strong> 2016 -2017</p>
             <ul>
-                <li><strong>Bachelor of Science in Computer Science</strong> - Holy Cross College (2021-Present)</li>
+                <li>Built and optimized RESTful APIs to support millions of users, improving performance and scalability.</li>
+                <li>Managed cloud deployments and ensured high system reliability with CI/CD pipelines.</li>
+                <li>Collaborated with cross-functional teams to deliver backend solutions and migrate legacy systems to microservices.</li>                
+            </ul> <br><br>  <br>
+            <h3>Facebook - Philippines</h3>
+            <p><strong>Position:</strong> Full Stack Developer</p>
+            <p><strong>Duration:</strong> 2018 -2019</p>
+            <ul>
+                <li>Designed and implemented scalable web applications, developing both backend APIs and responsive front-end interfaces.</li> 
+                <li>Improved database performance and optimized system reliability for large-scale user platforms.</li>
+                <li>Collaborated with cross-functional teams to deliver end-to-end solutions, integrating new features seamlessly across the stack.</li>
             </ul>
-
-            <h2>Contact</h2>
-            <p>Email:<a href="mailto:member1@example.com">mangulabnanrica3@gmail.com</a></p>
-        </section>
-    </main>
+         </div>   
+        </div>
+    </div>
+    
 </body>
 </html>
